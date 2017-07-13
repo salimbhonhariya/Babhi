@@ -20,6 +20,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
 </head>
 <body>
     <!-- Navigation -->
@@ -53,6 +55,20 @@
         </div>
         <!-- /.container -->
     </nav>
+    <div class="modal fade" id="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Greetings from Babhi's salon staff.</h4>
+                </div>
+                <div class="modal-body">
+                    <!--<p>Eid Mubarak</p>-->
+                    <img src="img/SalonEidMubarak.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Header -->
     <a name="about"></a>
@@ -164,7 +180,7 @@
                         <li>
                             <a href="#">Home</a>
                         </li>
-                       
+
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
                             <a href="#services">Services</a>
@@ -187,5 +203,20 @@
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            console.log("document loaded");
+        });
+        $('#overlay').modal('show');
+
+        setTimeout(function () {
+            $('#overlay').modal('hide');
+        }, 20000);
+
+    </script>
+
+
+
 </body>
 </html>
